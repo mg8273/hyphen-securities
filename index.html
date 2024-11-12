@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home | Hyphen Securities</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #0E1E35;
+            display: flex;
+            flex-direction: column; /* Allows footer to stay at the bottom */
+            min-height: 100vh; /* Full height of the viewport */
+        }
+
+        /* Header */
+        header {
+            background-color: #0E1E35;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo img {
+            height: 60px; /* Logo height */
+        }
+
+        nav {
+            display: flex; /* Flexbox for navigation */
+            gap: 30px; /* Space between navigation items */
+        }
+
+        nav a {
+            color: #ffffff; /* Link color */
+            text-decoration: none; /* Remove underline from links */
+            font-weight: bold; /* Bold text for links */
+            padding: 8px 15px; /* Padding for links */
+            border-radius: 5px; /* Rounded corners for links */
+            transition: background 0.3s; /* Transition effect on hover */
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Background change on hover */
+        }
+
+        .login-button {
+            height: 36px; /* Button height */
+            width: 100px; /* Button width */
+            font-size: 15px; /* Button font size */
+            background-color: #0E1E35; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none; /* Remove border from button */
+            border-radius: 5px; /* Rounded corners for button */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background 0.3s; /* Transition effect on hover */
+        }
+
+        .login-button:hover {
+            background-color: #335e90; /* Change button background on hover */
+        }
+
+        /* Main Content */
+        .main_box {
+            text-align: center;
+            padding: 100px 20px; /* Padding for main content */
+            max-width: 800px; /* Max width for content area */
+            margin: auto; /* Centering the content */
+        }
+
+        .main_box h2 {
+            font-size: 2.5em; /* Heading size */
+            color: #335e90; /* Heading color */
+            margin-bottom: 10px; /* Space below heading */
+        }
+
+        .main_box p {
+            font-size: 1.2em; /* Paragraph size */
+            line-height: 1.5; /* Line height for readability */
+            margin-top: 20px; /* Space above paragraph */
+        }
+
+        .investment-table {
+            width: 100%; 
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+
+        .investment-table th, .investment-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .investment-table th {
+            background-color: #335e90;
+            color: white;
+        }
+
+        .investment-table tr:nth-child(even) {
+           background-color:#f2f2f2 ;
+       }
+
+       .investment-table tr:hover {
+           background-color:#ddd ;
+       }
+
+       /* Footer */
+       footer {
+           background-color: #0E1E35; /* Footer background color */
+           color: #ffffff; /* Footer text color */
+           text-align: center; /* Center align footer text */
+           padding: 20px 0; /* Padding for footer section */
+           font-size: 0.9em; /* Font size for footer text */
+           margin-top:auto ; 
+       }
+
+       .footer-container {
+           display:flex ; 
+           flex-wrap :wrap ; 
+           justify-content :space-between ; 
+           max-width :1200px ; 
+           margin:auto ; 
+           padding :20px ; 
+       }
+
+       .footer-links, .footer-social {
+           flex-basis :calc(50% - 40px) ; 
+           padding :10px ; 
+       }
+
+       .footer-links h3, .footer-social h3 {
+           margin-bottom :15px ; 
+       }
+
+       .footer-links ul, .footer-social ul {
+           list-style-type :none ; 
+           padding-left :0 ; 
+       }
+
+       .footer-links li, .footer-social li {
+           margin-bottom :10px ; 
+       }
+
+       .footer-links a, .footer-social a {
+           color :#ffffff ; 
+           text-decoration :none ; 
+           transition :color 0.3s ; 
+       }
+
+       .footer-links a:hover, .footer-social a:hover {
+           color :#335e90 ; 
+       }
+
+       .footer-copyright {
+           text-align:center ; 
+           margin-top :10px ; 
+           flex-basis :100%; 
+           font-size :0.85em ; 
+       }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+          <img src="/images/logo.png" alt="Hyphen Securities Logo">
+      </div>
+      <nav>
+          <a href="who we are.html" target="_blank">Who We Are</a>
+          <a href="what we do.html" target="_blank">What We Do</a>
+          <a href="whats new.html" target="_blank">What's New</a>
+          <a href="join our team.html" target="_blank">Join Our Team</a>
+          <a href="login.html" target="_blank"><button class="login-button">Login</button></a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main_box">
+        <h2>Welcome to Hyphen Securities</h2>
+        <p>Your trusted partner in investment solutions.</p>
+
+        <img src="/images/wspic.jpg" alt="A classy representation of financial growth and investment opportunities">
+
+        <!-- Additional Business and Finance Content -->
+        <p>At Hyphen Securities, we specialize in providing comprehensive financial services tailored to meet the diverse needs of our clients. From wealth management to investment advisory services, our team of experts is dedicated to helping you navigate the complexities of financial markets.</p>
+
+        <p>With an impressive portfolio and a commitment to excellence, we have successfully managed assets worth over $420 billion. Our innovative strategies and personalized approach ensure that your investments are not only safe but also positioned for growth.</p>
+
+        <!-- Investment Progress Table -->
+         <br>
+        <h3>Investment Progress Overview</h3>
+        
+        
+        <table class="investment-table">
+          <thead>
+              <tr>
+                  <th>Year</th>
+                  <th>Investment Value (in Billion $)</th>
+                  <th>Growth Rate (%)</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>2021</td>
+                  <td>$350</td>
+                  <td>10%</td>
+              </tr>
+              <tr>
+                  <td>2022</td>
+                  <td>$370</td>
+                  <td>5.7%</td>
+              </tr>
+              <tr>
+                  <td>2023</td>
+                  <td>$420</td>
+                  <td>13.5%</td>
+              </tr>
+          </tbody>
+      </table>
+      <br><br>
+
+      <video controls width="600">
+        <source src="/media/numbers1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br><br>
+
+      <!-- Closing Paragraph -->
+      <p>Join us at Hyphen Securities to take advantage of our expertise and resources in achieving your financial aspirations. Together, we can build a prosperous future.</p>
+
+      
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+          <!-- Quick Links -->
+          <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="who we are.html" target="_blank">About Us</a></li>
+                  <li><a href="what we do.html" target="_blank">Services</a></li>
+                  <li><a href="whats new.html" target="_blank">What's New</a></li>
+                  <li><a href="join our team.html" target="_blank">Join Our Team</a></li>
+                  <li><a href="testimonial.html" target="_blank">Testimonials</a></li>
+                  <li><a href="login.html" target="_blank">Login</a></li>
+              </ul>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="footer-social">
+              <h3>Follow Us</h3>
+              <ul>
+                  <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                  <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                  <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                  <li><a href="gallery.html" target="_blank">Photo Gallery</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer-copyright">
+          <p>&copy; 2023 Hyphen Securities. All Rights Reserved.</p>
+      </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Image Gallery | Hyphen Securities</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #0E1E35;
+            display: flex;
+            flex-direction: column; /* Allows footer to stay at the bottom */
+            min-height: 100vh; /* Full height of the viewport */
+        }
+
+        /* Header */
+        header {
+            background-color: #0E1E35;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo img {
+            height: 60px; /* Logo height */
+        }
+
+        nav {
+            display: flex; /* Flexbox for navigation */
+            gap: 30px; /* Space between navigation items */
+        }
+
+        nav a {
+            color: #ffffff; /* Link color */
+            text-decoration: none; /* Remove underline from links */
+            font-weight: bold; /* Bold text for links */
+            padding: 8px 15px; /* Padding for links */
+            border-radius: 5px; /* Rounded corners for links */
+            transition: background 0.3s; /* Transition effect on hover */
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Background change on hover */
+        }
+
+        /* Main Content */
+        .content {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto; /* Centering content area */
+        }
+
+        .content h2 {
+            font-size: 2.5em; /* Heading size */
+            margin-bottom: 20px;
+            text-align: center; /* Center align heading */
+            color: #335e90; /* Heading color */
+        }
+
+        .gallery {
+            display: grid; /* Use grid layout for gallery */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+            gap: 20px; /* Space between images */
+        }
+
+        .gallery img {
+            width: 100%; /* Make images responsive */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect for depth */
+        }
+
+        /* Footer Section Styles (same as before) */
+
+        footer {
+           background-color:#0E1E35 ; 
+           color:#ffffff ; 
+           text-align:center ; 
+           padding :15px ; 
+           font-size :0.9em ; 
+       }
+       
+       footer .footer-links, footer .social-icons {
+           display:flex ; 
+           justify-content:center ; 
+           gap :20px ; 
+           padding :10px ; 
+       }
+
+       footer a {
+           color :#ffffff ; 
+           text-decoration :none ; 
+           font-weight :bold ; 
+       }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+          <img src="/images/logo.png" alt="Hyphen Securities Logo">
+      </div>
+      <nav>
+          <a href="who we are.html">Who We Are</a>
+          <a href="what we do.html">What We Do</a>
+          <a href="whats new.html">What's New</a>
+          <a href="join our team.html">Join Our Team</a>
+          <a href="login.html"><button class="login-button">Login</button></a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>Image Gallery</h2>
+        
+        <!-- Gallery Section -->
+        <div class="gallery">
+            <img src="/images/aboutus.jpg" alt="Image description here" /> <!-- Placeholder for image -->
+            <img src="/images/newspaper.jpg" alt="Image description here" /> <!-- Placeholder for image -->
+            <img src="/images/numbers.jpg" alt="Image description here" /> <!-- Placeholder for image -->
+            <img src="/images/numbers2.jpg" alt="Image description here" /> <!-- Placeholder for image -->
+            <img src="/images/nyse screens.jpg" alt="Image description here" /> <!-- Placeholder for image -->
+            <img src="/images/wspic.jpg" alt="Image description here" /> <!-- Placeholder for image -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-links">
+          <a href="who we are.html">About Us</a>
+          <a href="what we do.html">Our Services</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-icons">
+          <a href="https://www.facebook.com/fakeprofile12">Facebook</a> | 
+          <a href="https://twitter.com/fakeprofile123">Twitter</a> | 
+          <a href="https://www.linkedin.com/fakeprofile123">LinkedIn</a>
+      </div>
+      <p>&copy; 2023 Hyphen Securities. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
